@@ -168,6 +168,7 @@ AudioFlinger::AudioFlinger()
       mPatchPanel(this),
       mSystemReady(false)
 {
+    ALOGI("Audio Flinger started !!!!!!!!!!!!!!!!!!!!!!!\n");
     // unsigned instead of audio_unique_id_use_t, because ++ operator is unavailable for enum
     for (unsigned use = AUDIO_UNIQUE_ID_USE_UNSPECIFIED; use < AUDIO_UNIQUE_ID_USE_MAX; use++) {
         // zero ID has a special meaning, so unavailable

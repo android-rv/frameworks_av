@@ -170,7 +170,7 @@ LOCAL_SHARED_LIBRARIES := \
         libui \
         libgui \
         libcutils \
-        libRScpp \
+        #libRScpp \
 
 LOCAL_C_INCLUDES:= \
         frameworks/av/media/libstagefright \
@@ -178,11 +178,12 @@ LOCAL_C_INCLUDES:= \
         frameworks/rs/cpp \
         frameworks/rs \
 
-intermediates := $(call intermediates-dir-for,STATIC_LIBRARIES,libRS,TARGET,)
+#intermediates := $(call intermediates-dir-for,STATIC_LIBRARIES,libRS,TARGET,)
 LOCAL_C_INCLUDES += $(intermediates)
 
 LOCAL_STATIC_LIBRARIES:= \
-        libstagefright_mediafilter
+
+#        libstagefright_mediafilter
 
 LOCAL_CFLAGS += -Wno-multichar -Werror -Wall
 
